@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment form</h1>
+        <h2>contact_information</h2>
+        <h3><p>* it means its necessary to fill that </p></h3>
+        <p>name: * <input type="text" name="name" required></p> <!--ye value server mai store hogi aur server mai apunko name ke liye name ko dekhna pdega -->
+        <fieldset>
+            <legend>Gender</legend> <!--ye tag bcoz feildset ko naam dene kelieye-->
+        <p>
+            Male: <input type="radio" name="gender" id=""> 
+            <!-- name mai gender same bcoz ye value same hai usko change kiya toh user dodko tick kr skta hai-->
+            Female: <input type="radio" name="gender" id=""> <!-- radio bcoz hmko option select krna hai-->
+        </p>
+    </fieldset>
+        <p>
+            Address: <textarea name="address" id="address" cols="100" rows="6"></textarea>
+        </p>
+        <p>Current status: * 
+            <select name="Current" id="Current" required>
+                <option value="">--Select_status--</option>
+                <option value="househuband"> househuband</option>
+                <option value="chutiya"> chutiya</option>
+                <option value="teacher"> teacher</option>
+                <option value="student"> student</option>
+           </select>
+         </p>
+        <p>E-mail: *<input type="email" name="email" id="email" required></p>
+        <p>Pin_code: *<input type="number" name="pin" id="pin" required></p>
+        <p>mobile_number: *<input type="number" name="no" id="no" required></p>
+        <hr>
+        <h2> <b> payemnt detils</b></h2>
+        <p>Card_type: *
+            <select name="card_type" id="card_type"   required>
+                <option value="">--selsct a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="shopi_card">shopi_card</option>
+                <option value="identity_card">identity_card</option>
+                <option value="Atm card">Atm card</option>
+            </select>
+      </p>
+        <p>card_number: <input type="number" name="cardnumber" id="cardnumber"> 
+
+        </p>
+        <p>Bank_name: <input type="text" name="Bank_name"></p>
+        <p>Expiry_date: <input type="date" name="Expirydate" id="Expiry_date"></p>
+        <p>CVV: <input type="password" name="CVV" id="CVV"></p>
+        <p>password:<input type="password" name="password" id="password"> </p>
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
