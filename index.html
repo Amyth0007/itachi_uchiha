@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Balsamiq Sans', cursive;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/wallpaperflare.com_wallpaper\ \(4\).jpg');
+        height: 1000px;
+        /* width: 1500px; */
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left : 0px;
+        top: 20px;
+       
+    }
+    .left img{
+           height: 62px;
+           width: 95px;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        /* border: 3px solid yellow; */
+        margin:  16px auto;        
+    }
+    .right{
+        font-family: 'Balsamiq Sans', cursive;
+        /* display: inline-block; */
+        /* border: 2px solid green; */
+        position: absolute;
+        right : 6px;
+        top: 18px;
+    }
+    .btn{
+        color: white;
+        background-color:rgb(8, 1, 1);
+        margin: 0px 8px;
+        padding: 14px 6px;
+        border: 2px solid lightsalmon;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+
+    }
+    .btn:hover{
+        background-color: blueviolet;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 24px;
+    }
+    .navbar li a{ 
+        
+        padding: 10px;
+        color: rgba(14, 13, 13, 0.979);
+        text-decoration: none;
+    }
+    .navbar li a:hover, .navbar li a.active{ 
+        
+       text-decoration: underline;
+       color: rgb(44, 2, 23);
+    }
+    .container{
+        border: 2px solid khaki;
+     margin: 145px 4px;
+     margin-right: 735px;
+        padding: 36px 2px;
+        border-radius: 17px 17px;
+        color: black;
+        /* left: 4000px; */
+        right: 4000px;
+    }
+    h1{
+        margin: auto;
+    }
+    form{
+    background-color: rgb(160, 154, 146);
+    padding: 5px 20px 15px 20px;
+    border: 5ps solid black;
+    border-radius: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: auto;
+}
+.main{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input[type ="submit"]{
+    font-family: sans-serif;
+    background-color: green;
+    color: #fff;
+   
+    align-self: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover{
+    background-color: crimson;
+}
+</style>
+<body>
+   
+    <header class="header">
+        <div class="left">
+       <img src="img/pain.png" alt="amit bhai">
+       <div>amit's universe</div>
+            
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li> <a href="#"> About us</a></li>
+                <li> <a href="#">universe</a></li>
+                <li> <a href="#">Contact_us</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <button class="btn">explore us</button><button class="btn"> Serve </button><button class="btn">appointment</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+       <h2> “Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</h2>
+        <form action="">
+            <h1 class="main">Share your thoughts</h1>
+            <hr>
+            <h2>contact_information</h2>
+            <h3><p>* it means its necessary to fill that </p></h3>
+            <p>name: * <input type="text" name="name" placeholder="levi ackerman" required></p> <!--ye value server mai store hogi aur server mai apunko name ke liye name ko dekhna pdega -->
+            <fieldset>
+                <legend>Gender</legend> <!--ye tag bcoz feildset ko naam dene kelieye-->
+            <p>
+                Male: <input type="radio" name="gender" id=""> 
+                <!-- name mai gender same bcoz ye value same hai usko change kiya toh user dodko tick kr skta hai-->
+                Female: <input type="radio" name="gender" id=""> <!-- radio bcoz hmko option select krna hai-->
+            </p>
+        </fieldset>
+            <p>
+                Address: <textarea name="address" id="address" cols="100" rows="6" placeholder = " enter your address"></textarea>
+            </p>
+            <p>Current status: * 
+                <select name="Current" id="Current" required>
+                    <option value="">--Select_status--</option>
+                    <option value="househusband"> househusband</option>
+                    <option value="chutiya"> chutiya</option>
+                    <option value="teacher"> teacher</option>
+                    <option value="student"> student</option>
+               </select>
+             </p>
+            <p>E-mail: *<input type="email" name="email" id="email" required placeholder="levi@gmail.com"></p>
+            <p>Pin_code: *<input type="number" name="pin" id="pin" required placeholder="123456"></p>
+            <p>mobile_number: *<input type="number" name="no" id="no" required  placeholder="8600580420"></p>
+            <hr>
+            <h2> <b>Space time</b></h2>
+            <p>Planet names: *
+                <select name="Planet names" id="Planet names"   required>
+                    <option value="">--selsct a card type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="shopi_card">shopi_card</option>
+                    <option value="identity_card">identity_card</option>
+                    <option value="Atm card">Atm card</option>
+                </select>
+          </p>
+            <p>Planet no: <input placeholder="2444432545324" type="number" name="cardnumber" id="cardnumber"> 
+    
+            </p>
+            <p>Black holes: <input type="text" name="Bank_name" placeholder="nebula"></p>
+            <p>Expiry_date: <input type="date" name="Expirydate" id="Expiry_date" placeholder="01/02/2020"></p>
+            <p>tour data: <input type="password" name="CVV" id="CVV" placeholder="123" ></p>
+            <p>password:<input type="password" name="password" id="password" placeholder="enater your password"></p>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
